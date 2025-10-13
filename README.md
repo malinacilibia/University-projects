@@ -1,58 +1,52 @@
-# Univeristy projects
+# University Projects
 
 ## First Year
-
 ### First Semester
-1. Microeconomics
-2. European Economics
-3. Applied Mathematics in Economics
-4. Management
-5. Public Finance
-6. Fundamentals of Services
-
-### Second Semester 
-1. Macroeconomics
-2. Financial and Actuarial Mathematics
-3. Basics of Accounting
-4. Introduction to Computer Programming
-5. Basics of Marketing
-6. Business Law
-   
+- Microeconomics
+- European Economics
+- Applied Mathematics in Economics
+- Management
+- Public Finance
+- Fundamentals of Services
+  
+### Second Semester
+- Macroeconomics
+- Financial and Actuarial Mathematics
+- Basics of Accounting
+- Introduction to Computer Programming
+- Basics of Marketing
+- Business Law
 
 ## Second Year
+### First Semester
+- Financial Accounting
+- Corporate Finance
+- Algorithms and Data Structures
+- Descriptive Statistics
+- Business Ethics
+- Business Management
 
-### First Semester 
-1. Financial Accounting
-2. Corporate Finance
-3. Algorithms and Data Structures
-4. Descriptive Statistics
-5. Business Ethics
-6. Business Management
-
-### Second Semester 
-1. Object-Oriented Programming
-2. Databases 
-3. Operating Systems
-4. Front-End Web Technologies
-5. Human Resource Management
-
+### Second Semester
+- Object-Oriented Programming
+- [Databases](Second%20Year/Second%20Semester/Databases)
+- Operating Systems
+- Front-End Web Technologies
+- Human Resource Management
 
 ## Third Year
+### First Semester
+- [Programming Environments and Development](Third%20Year/First%20Semester/Programming%20Environments%20and%20Development)
+- [Design and Development of Websites and Web Portals](Third%20Year/First%20Semester/Design%20and%20Development%20of%20Websites%20and%20Web%20Portals)
+- [Computer Networks and Distributed Systems](Third%20Year/First%20Semester/Computer%20Networks%20and%20Distributed%20Systems)
+- [Advanced Database Elements](Third%20Year/First%20Semester/Advanced%20Database%20Elements)
+- [Artificial Intelligence](Third%20Year/First%20Semester/Artificial%20Intelligence)
+- [Software Testing](Third%20Year/First%20Semester/Software%20Testing)
+- Marketing Policies
 
-### First Semester 
-1. Programming Environments and Development
-2. Design and Development of Websites and Web Portals
-3. Computer Networks and Distributed Systems
-4. Advanced Database Elements
-5. Artificial Intelligence
-6. Software Testing
-7. Marketing Policies
-   
-### Second Semester 
-1. Analysis and Design of Information Systems
-2. Semantic Web
-3. Fundamentals of Big Data
-4. Business Intelligence
-5. Bachelor Thesis
-6. Applied Cryptography in Economics and Business Management
-7. Promotion Tools and Techniques
+### Second Semester
+- Analysis and Design of Information Systems
+- [Semantic Web](Third%20Year/Second%20Semester/Semantic%20Web)
+- [Fundamentals of Big Data](Third%20Year/Second%20Semester/Fundamentals%20of%20Big%20Data)
+- [Business Intelligence](Third%20Year/Second%20Semester/Business%20Intelligence)
+- Applied Cryptography in Economics and Business Management
+- Promotion Tools and Techniques
