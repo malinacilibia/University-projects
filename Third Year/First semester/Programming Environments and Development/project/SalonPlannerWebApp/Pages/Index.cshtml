@@ -1,0 +1,64 @@
+﻿@page
+@model SalonPlannerWebApp.Pages.IndexModel
+@inject Microsoft.AspNetCore.Identity.UserManager<Microsoft.AspNetCore.Identity.IdentityUser> UserManager
+@inject Microsoft.AspNetCore.Identity.RoleManager<Microsoft.AspNetCore.Identity.IdentityRole> RoleManager
+
+@{
+    ViewData["Title"] = "Bine ați venit la Devine BeautySalon!";
+    var user = UserManager.GetUserAsync(User).Result;
+    var roles = user != null ? UserManager.GetRolesAsync(user).Result : new List<string>();
+}
+
+<section class="hero-section text-center">
+    @if (user == null)
+    {
+        <div class="welcome-card">
+            <!-- Titlu pentru vizitatori -->
+            <h1 class="welcome-title">Bine ați venit la <span class="text-accent">Devine BeautySalon!</span></h1>
+            <h2 class="section-subtitle mt-4">Ce vă oferim:</h2>
+            <p class="welcome-text">
+                Redefinim frumusețea cu servicii premium. Alăturați-vă nouă și descoperiți o gamă largă de servicii într-un mediu relaxant și sofisticat.
+            </p>
+            <ul class="welcome-list">
+                <li>Rezervați programări simplu și rapid.</li>
+                <li>Explorați servicii personalizate, inclusiv tratamente spa și îngrijire facială.</li>
+                <li>Lăsați feedback anonim pentru a contribui la calitatea serviciilor noastre.</li>
+            </ul>
+            <a class="welcome-btn btn-secondary btn-lg mt-4" href="/Services/Index" role="button">Explorați Serviciile Noastre</a>
+        </div>
+    }
+    else if (roles.Contains("Admin"))
+    {
+        <div class="welcome-card">
+            <!-- Titlu pentru admin -->
+            <h1 class="welcome-title">Bun venit, Administrator!</h1>
+            <h2 class="section-subtitle mt-4">Funcționalități disponibile:</h2>
+            <p class="welcome-text">
+                Gestionați eficient toate aspectele salonului pentru a oferi o experiență de calitate clienților noștri. Vă mulțumim pentru implicarea dumneavoastră.
+            </p>
+            <ul class="welcome-list">
+                <li><a href="/Appointments/Index">Gestionați programările clienților</a>.</li>
+                <li><a href="/Employees/Index">Administrați echipa de angajați</a>.</li>
+                <li><a href="/Services/Index">Actualizați lista serviciilor oferite</a>.</li>
+                <li><a href="/Feedbacks/Index">Analizați feedback-ul clienților</a>.</li>
+            </ul>
+        </div>
+    }
+    else if (roles.Contains("User"))
+    {
+        <div class="welcome-card">
+            <!-- Titlu pentru utilizatori -->
+            <h1 class="welcome-title">Bun venit în familia <span class="text-accent">Devine BeautySalon!</span></h1>
+            <h2 class="section-subtitle mt-4">Ce puteți face:</h2>
+            <p class="welcome-text">
+                Explorați serviciile noastre și gestionați programările personale. Echipa noastră vă stă la dispoziție pentru a vă oferi o experiență remarcabilă.
+            </p>
+            <ul class="welcome-list">
+                <li><a href="/AppointmentsClients/Index">Gestionați programările dumneavoastră</a>.</li>
+                <li><a href="/Services/Index">Descoperiți serviciile personalizate</a>.</li>
+                <li><a href="/Feedbacks/Create">Lăsați un feedback pentru a contribui la îmbunătățirea serviciilor</a>.</li>
+            </ul>
+            <a class="welcome-btn btn-primary btn-lg mt-4" href="/AppointmentsClients/Index" role="button">Gestionați Programările</a>
+        </div>
+    }
+</section>

@@ -1,0 +1,39 @@
+﻿@page
+@model SalonPlannerWebApp.Pages.Appointments.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="page-title">Appointment Details</h1>
+
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">Appointment Details</div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-4">Client</dt>
+                <dd class="col-sm-8">@Model.Appointment.Client.FirstName @Model.Appointment.Client.LastName</dd>
+
+                <dt class="col-sm-4">Angajat</dt>
+                <dd class="col-sm-8">@Model.Appointment.Employee.FirstName @Model.Appointment.Employee.LastName</dd>
+
+                <dt class="col-sm-4">Serviciu</dt>
+                <dd class="col-sm-8">@Model.Appointment.Service.Name</dd>
+
+                <dt class="col-sm-4">Data</dt>
+                <dd class="col-sm-8">@Model.Appointment.Date.ToShortDateString()</dd>
+
+                <dt class="col-sm-4">Durata</dt>
+                <dd class="col-sm-8">@Model.Appointment.Duration</dd>
+
+                <dt class="col-sm-4">Status</dt>
+                <dd class="col-sm-8">@Model.Appointment.Status</dd>
+            </dl>
+            <div class="form-group mt-3">
+                <a asp-page="./Edit" asp-route-id="@Model.Appointment.ID" class="btn btn-primary">Edit</a>
+                <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>

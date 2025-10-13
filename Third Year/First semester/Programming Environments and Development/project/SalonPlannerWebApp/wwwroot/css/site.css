@@ -1,0 +1,451 @@
+﻿/* Stiluri generale */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f0fa;
+    color: #4a0072;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h4 {
+    color: #6a1b9a; /* Mov principal */
+}
+
+a {
+    color: #9c27b0; /* Mov accent */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+    a:hover {
+        color: #4a0072; /* Mov închis */
+        text-decoration: underline;
+    }
+
+/* Stiluri pentru formulare */
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+.form-control {
+    border: 1px solid #d1c4e9; /* Mov deschis */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+    .form-control:focus {
+        border-color: #9c27b0;
+        box-shadow: 0 0 0 0.2rem rgba(156, 39, 176, 0.25);
+    }
+
+input[type="submit"], .btn {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #6a1b9a;
+    border: none;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background-color: #4a0072;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+.btn-secondary {
+    background-color: #7b1fa2;
+    border: none;
+    color: white;
+}
+
+    .btn-secondary:hover {
+        background-color: #6a1b9a;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+.btn-danger {
+    background-color: #aa00ff;
+    border: none;
+    color: white;
+}
+
+    .btn-danger:hover {
+        background-color: #6a1b9a;
+    }
+
+/* Stiluri pentru tabel */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom:100px;
+}
+
+    table th, table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    table th {
+        background-color: #ffffff;
+         /* Mov deschis */
+        font-weight: bold;
+        color: #6a1b9a;
+    }
+
+    table tr:hover {
+        background-color: #f8e1f4;
+        transform: scale(1.01);
+        transition: all 0.3s ease;
+    }
+
+.table-success {
+    background-color: #f3e5f5;
+    color: #4a0072;
+}
+
+/* Stiluri pentru validări */
+.text-danger {
+    color: #aa00ff;
+    font-size: 0.9rem;
+}
+
+
+/* Responsivitate */
+@media (max-width: 768px) {
+    .form-control {
+        width: 100%;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+}
+
+/* Ajustează containerul principal */
+.container {
+    margin-top: 50px; /* Spațiu între header și primul element */
+}
+
+/* Spațiu suplimentar pentru elemente */
+.hero-section {
+    margin-top: 50px;
+    padding: 40px 20px;
+}
+
+body {
+    margin: 0; /* Elimină spațiile implicite */
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px; /* Spațiu între header și conținut */
+}
+/* Stiluri pentru containerul mesajului de bun venit */
+.welcome-container {
+    background-color: #f8f0fa; /* Fundal deschis mov */
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e0cfe8; /* Border mov deschis */
+    border-radius: 10px; /* Colțuri rotunjite */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbră ușoară */
+    text-align: left;
+}
+
+/* Titlul mesajului */
+.welcome-title {
+    color: #6a1b9a; /* Mov închis */
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* Textul mesajului */
+.welcome-text {
+    color: #4a0072; /* Mov mai închis */
+    font-size: 1.1rem;
+    line-height: 1.8; /* Spațiere între rânduri */
+    margin-top: 10px;
+}
+.welcome-card {
+    background-color: #ffffff; /* Mov elegant */
+    color: #6a1b9a;
+    /* Text alb */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .welcome-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+.welcome-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.welcome-link {
+    color: #d8b6ff; /* Accentuare mov deschis */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .welcome-link:hover {
+        color: #ffffff; /* Alb */
+        text-decoration: underline;
+    }
+
+.welcome-btn {
+    background-color: #6a1b9a;
+    color: ##ffffff; /* Text mov */
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+    .welcome-btn:hover {
+        background-color: #d8b6ff; /* Mov deschis */
+        color: #ffffff; /* Text alb */
+        border-color: #d8b6ff;
+    }
+/* General Styling for Cards */
+.card-container {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d1c4e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #6a1b9a;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 1rem;
+    color: #4a0072;
+}
+
+.page-title {
+    text-align: center;
+    color: #6a1b9a;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border: 1px solid #d1c4e9;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+    .form-control:focus {
+        border-color: #9c27b0;
+        box-shadow: 0 0 0 0.2rem rgba(156, 39, 176, 0.25);
+    }
+
+/* Button Styling */
+.btn-primary {
+    background-color: #6a1b9a;
+    border: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #4a0072;
+    }
+.pagination-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .pagination-container .pagination {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+        .pagination-container .pagination li {
+            display: inline;
+            margin: 0 5px;
+        }
+
+            .pagination-container .pagination li a,
+            .pagination-container .pagination li span {
+                color: #6a1b9a;
+                text-decoration: none;
+                padding: 10px 15px;
+                border: 1px solid #e0e0e0;
+                border-radius: 5px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+                .pagination-container .pagination li a:hover {
+                    background-color: #6a1b9a;
+                    color: white;
+                }
+
+        .pagination-container .pagination .active span {
+            background-color: #6a1b9a;
+            color: white;
+            border-color: #6a1b9a;
+        }
+/* Stil pentru întreaga secțiune */
+.hero-section {
+    padding: 40px 20px;
+    background-color: #f3f0fa; /* Fundal deschis, mov pal */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titlu principal */
+.welcome-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6a0dad; /* Mov intens */
+    margin-bottom: 20px;
+}
+
+    .welcome-title .text-accent {
+        color: #a64ca6; /* Mov mai deschis */
+    }
+
+/* Subtitlu */
+.section-subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #7944a2; /* Mov mediu */
+    margin-bottom: 20px;
+}
+
+/* Text descriptiv */
+.welcome-text {
+    font-size: 1.1rem;
+    color: #6a0dad; /* Mov intens */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Stil pentru lista */
+.welcome-list {
+    list-style-type: none; /* Elimină punctele */
+    padding: 0;
+    margin: 0 0 20px;
+    font-size: 1rem;
+    color: #6a0dad; /* Mov intens */
+}
+
+    .welcome-list li {
+        margin: 10px 0;
+        position: relative;
+        padding-left: 25px; /* Spațiu pentru icon */
+    }
+
+        /* Iconă înainte de fiecare element din listă */
+        .welcome-list li::before {
+            position: absolute;
+            left: 0;
+            color: #a64ca6; /* Mov deschis */
+            font-weight: bold;
+        }
+
+/* Stil pentru butoane */
+.welcome-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #6a0dad; /* Mov intens */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    .welcome-btn:hover {
+        background-color: #7944a2; /* Nuanta mai închisă pentru hover */
+        text-decoration: none;
+        transform: scale(1.05);
+    }
+
+/* Stil pentru link-uri din listă */
+.welcome-list a {
+    color: #6a0dad; /* Mov intens */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    .welcome-list a:hover {
+        text-decoration: underline;
+        color: #7944a2; /* Mov mediu la hover */
+    }
+
+
+
+

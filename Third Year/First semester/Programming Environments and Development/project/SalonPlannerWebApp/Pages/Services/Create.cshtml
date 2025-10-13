@@ -1,0 +1,71 @@
+﻿@page
+@model SalonPlannerWebApp.Pages.Services.CreateModel
+
+@{
+    ViewData["Title"] = "Create Service";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">Create Service</div>
+        <div class="card-body">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Service.Name" class="control-label"></label>
+                    <input asp-for="Service.Name" class="form-control" />
+                    <span asp-validation-for="Service.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Service.Description" class="control-label"></label>
+                    <input asp-for="Service.Description" class="form-control" />
+                    <span asp-validation-for="Service.Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Service.Price" class="control-label"></label>
+                    <input asp-for="Service.Price" class="form-control" />
+                    <span asp-validation-for="Service.Price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Service.Duration" class="control-label"></label>
+                    <input asp-for="Service.Duration" class="form-control" />
+                    <span asp-validation-for="Service.Duration" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Categorii</label>
+                    <div class="table-responsive">
+                        <table class="table"> 
+                            <tr>
+                                @{
+                                    int cnt = 0; // contor pentru numararea categoriilor
+                                    foreach (var cat in Model.AssignedCategoryDataList) // iterare prin lista de categorii
+                                    {
+                                        if (cnt++ % 3 == 0) // la fiecare 3 categorii, adauga un rand nou
+                                        {
+                                            @:</tr><tr>
+                                        }
+                                        @:<td> <!-- celula pentru afisarea unei categorii -->
+                                            <input type="checkbox" name="selectedCategories" value="@cat.CategoryID"
+                                                   @(Html.Raw(cat.Assigned ? "checked=\"checked\"" : "")) /> <!-- checkbox pentru categorie -->
+                                            @cat.Name <!-- afiseaza numele categoriei -->
+                                        @:</td>
+                                    }
+                                @:</tr> <!-- inchide randul final -->
+                                }
+                        </table>
+                    </div>
+                </div>
+
+                <div class="form-group mt-4">
+                    <input type="submit" value="Create" class="btn btn-success" />
+                    <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

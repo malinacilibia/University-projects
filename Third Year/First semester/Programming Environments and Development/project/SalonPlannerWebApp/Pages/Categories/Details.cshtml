@@ -1,0 +1,32 @@
+﻿@page
+@model SalonPlannerWebApp.Pages.Categories.DetailsModel
+
+@{
+    ViewData["Title"] = "Category Details";
+}
+
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">Category Details</div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Category.Name)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Category.Name)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Category.Description)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Category.Description)
+                </dd>
+            </dl>
+            <div class="form-group mt-4">
+                <a asp-page="./Edit" asp-route-id="@Model.Category.ID" class="btn btn-primary">Edit</a>
+                <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>

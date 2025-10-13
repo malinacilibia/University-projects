@@ -1,0 +1,64 @@
+﻿@page
+@model SalonPlannerWebApp.Pages.Appointments.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="page-title">Edit Appointment</h1>
+
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">Edit Appointment</div>
+        <div class="card-body">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Appointment.ID" />
+
+                <div class="form-group">
+                    <label asp-for="Appointment.ClientID" class="control-label"></label>
+                    <select asp-for="Appointment.ClientID" class="form-control" asp-items="ViewBag.ClientID"></select>
+                    <span asp-validation-for="Appointment.ClientID" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Appointment.EmployeeID" class="control-label"></label>
+                    <select asp-for="Appointment.EmployeeID" class="form-control" asp-items="ViewBag.EmployeeID"></select>
+                    <span asp-validation-for="Appointment.EmployeeID" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Appointment.ServiceID" class="control-label"></label>
+                    <select asp-for="Appointment.ServiceID" class="form-control" asp-items="ViewBag.ServiceID"></select>
+                    <span asp-validation-for="Appointment.ServiceID" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <span class="text-danger">*</span>
+                    <label asp-for="Appointment.Date" class="control-label"></label>
+                    <input asp-for="Appointment.Date" class="form-control" />
+                    <span asp-validation-for="Appointment.Date" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <span class="text-danger">*</span>
+                    <label asp-for="Appointment.Duration" class="control-label"></label>
+                    <input asp-for="Appointment.Duration" class="form-control" />
+                    <span asp-validation-for="Appointment.Duration" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <span class="text-danger">*</span>
+                    <label asp-for="Appointment.Status" class="control-label"></label>
+                    <select asp-for="Appointment.Status" class="form-control" asp-items="Html.GetEnumSelectList<SalonPlannerWebApp.Models.AppointmentStatus>()"></select>
+                    <span asp-validation-for="Appointment.Status" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mt-4">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                    <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿@page
+@model SalonPlannerWebApp.Pages.Employees.DetailsModel
+
+@{
+    ViewData["Title"] = "Employee Details";
+}
+
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">Employee Details</div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-2">Prenume</dt>
+                <dd class="col-sm-10">@Model.Employee.FirstName</dd>
+                <dt class="col-sm-2">Nume</dt>
+                <dd class="col-sm-10">@Model.Employee.LastName</dd>
+                <dt class="col-sm-2">Email</dt>
+                <dd class="col-sm-10">@Model.Employee.Email</dd>
+                <dt class="col-sm-2">Telefon</dt>
+                <dd class="col-sm-10">@Model.Employee.Phone</dd>
+                <dt class="col-sm-2">Experienta</dt>
+                <dd class="col-sm-10">@Model.Employee.Experience</dd>
+                <dt class="col-sm-2">Studii</dt>
+                <dd class="col-sm-10">@Model.Employee.Studies</dd>
+            </dl>
+            <div class="form-group mt-4">
+                <a asp-page="./Edit" asp-route-id="@Model.Employee.Id" class="btn btn-primary">Edit</a>
+                <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>

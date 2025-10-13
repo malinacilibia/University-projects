@@ -1,0 +1,166 @@
+/* Stiluri generale */
+html, body {
+    font-family: 'Arial', sans-serif;
+    color: #4A3F35; /* Maro închis pentru text general */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: url('images/7 .jpg'); /* Calea către imagine */
+    background-size: cover; /* Imaginea acoperă întregul fundal */
+    background-repeat: no-repeat; /* Nu se repetă imaginea */
+    background-attachment: fixed; /* Imaginea rămâne fixă la scroll */
+    background-position: center; /* Imaginea este centrată */
+}
+
+.wrapper {
+    flex: 1; /* Asigură că wrapper-ul ocupă spațiul rămas */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: rgba(255, 255, 240, 0.9); /* Fundal alb-gălbui semi-transparent */
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Împinge footer-ul în jos */
+    border-top: 1px solid #D4AF37; /* Linie aurie */
+}
+
+/* Header */
+header {
+    background-color: #B8860B; /* Auriu închis pentru antet */
+    color: white; /* Text alb */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+/* Bara de navigare */
+.navbar-dark .navbar-nav .nav-link {
+    color: white; /* Text alb */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #D4AF37; /* Aurie deschisă */
+}
+
+/* Link-uri */
+a {
+    color: #B8860B; /* Auriu închis */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #D4AF37; /* Aurie deschisă */
+}
+
+/* Tabele */
+table.table {
+    background-color: rgba(255, 255, 240, 0.9); /* Fundal alb-gălbui semi-transparent */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table.table thead {
+    background-color: #B8860B; /* Auriu închis */
+    color: white; /* Text alb */
+    font-weight: bold;
+}
+
+table.table tbody tr:hover {
+    background-color: rgba(212, 175, 55, 0.3); /* Aurie semi-transparentă */
+}
+
+/* Butoane */
+.btn-primary {
+    background-color: #B8860B; /* Auriu închis */
+    border-color: #B8860B;
+    color: white;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #D4AF37; /* Aurie deschisă */
+    border-color: #D4AF37;
+}
+
+.btn-danger {
+    background-color: #8B4513; /* Maro închis */
+    border-color: #8B4513;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #A0522D; /* Maro mediu */
+    border-color: #A0522D;
+}
+
+/* Carduri și contenutoare */
+.container {
+    margin-top: 50px;
+    margin-bottom: 130px; /* Spațiu suplimentar înainte de footer */
+    padding: 20px;
+    background-color: rgba(255, 255, 240, 0.9); /* Fundal alb-gălbui semi-transparent */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h1 {
+    color: #8B4513; /* Maro închis pentru titluri */
+}
+
+/* Alinierea centrală */
+.text-center {
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(255, 255, 240, 0.9); /* Fundal alb-gălbui semi-transparent */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px; /* Spațiu suplimentar deasupra footer-ului */
+    border-top: 1px solid #D4AF37; /* Linie aurie */
+    width: 100%;
+}
+/* Stil pentru label */
+.form-label {
+    font-size: 1rem;
+    color: #6c757d; /* Gri-muted */
+    margin-bottom: 0;
+}
+
+/* Stil pentru select */
+.form-select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #ffcc80; /* Portocaliu deschis */
+    box-shadow: 0 0 5px rgba(255, 204, 128, 0.8); /* Umbra portocalie */
+    outline: none;
+}
+
+/* Stil pentru div */
+.form-group {
+    margin-bottom: 20px;
+}
+
+

@@ -1,0 +1,65 @@
+﻿@page 
+@model SalonPlannerWebApp.Pages.Services.IndexModel
+
+@{
+    ViewData["Title"] = "Services";
+}
+
+<h1>Lista serviciilor</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceD.Services.FirstOrDefault().Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceD.Services.FirstOrDefault().Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceD.Services.FirstOrDefault().Duration)
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.CategorySort">Categorie</a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ServiceD.Services)
+        {
+            string selectedRow = "";
+            if (item.ID == Model.ServiceID)
+            {
+                selectedRow = "table-success";
+            }
+
+            <tr class="@selectedRow">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Duration)
+                </td>
+                <td>
+                    @foreach (var category in item.ServiceCategories)
+                    {
+                        @category.Category.ID @: @category.Category.Name <br />
+                    }
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

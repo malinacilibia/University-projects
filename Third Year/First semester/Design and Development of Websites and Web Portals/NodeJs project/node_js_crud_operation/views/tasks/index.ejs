@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<div class="jumbotron text-center full-page">
+    <div class="content">
+        <h1 class="display-4">Task Management System</h1>
+        <p class="lead">Welcome to the Task Management System! This application allows you to efficiently manage your tasks by adding, editing, and tracking their progress. Easily organize tasks by priority and status, and keep track of completed and in-progress activities.</p>
+        <hr class="my-4">
+        <p>Use the search bar to quickly find tasks, or explore the options to view and manage tasks below.</p>
+    </div>
+</div>
+
+
+<body class="container" style="margin-top: 50px;">
+    <% if (messages.success) { %>
+        <div class="alert alert-success" role="alert"><%- messages.success %></div>
+    <% } %>
+    <% if (messages.error) { %>
+        <div class="alert alert-danger" role="alert"><%- messages.error %></div>
+    <% } %>
+    <form action="/tasks/search" method="GET" class="mb-3">
+        <div class="input-group">
+            <input type="text" name="query" class="form-control" placeholder="Search tasks..." required>
+            <button class="btn btn-primary" type="submit">Search</button>
+            <a href="/tasks" class="btn btn-secondary">Reset</a>
+        </div>
+    </form>
+
+    <div class="card">
+        <div class="card-header">
+            <ul class="nav nav-pills w-100">
+                <li class="nav-pill active">
+                    <a class="nav-link">Tasks</a>
+                </li>
+                <li class="nav-pill ml-auto">
+                    <a class="btn btn-primary" href="/tasks/add">Add Task</a>
+                </li>
+                <li class="nav-pill">
+                    <a class="btn btn-primary btn-complete" href="/tasks/completed">Completed Tasks</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <% if (data.length) { %>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Priority</th>
+                            <th scope="col">Status</th>
+                            <th width="200px">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (var i = 0; i < data.length; i++) { %>
+                            <tr>
+                                <th scope="row"><%= (i + 1) %></th>
+                                <td><%= data[i].title %></td>
+                                <td><%= data[i].description %></td>
+                                <td><%= data[i].priority %></td>
+                                <td><%= data[i].status %></td>
+                                <td>
+                                    <% if (data[i].status === 'in progress') { %>
+                                        <a class="btn btn-primary" href="/tasks/complete/<%= data[i].id_task %>">Complete</a>
+                                    <% } else { %>
+                                        <span class="badge badge-success">Complete</span>
+                                    <% } %>
+                                    <br></br>
+                                    <a class="btn btn-success edit" href="/tasks/edit/<%= data[i].id_task %>">Edit</a>
+                                    <a class="btn btn-danger delete" onclick="return confirm('Are you sure want to delete this record?')" href="/tasks/delete/<%= data[i].id_task %>">Delete</a>
+                                </td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            <% } %>
+            <% if (!data.length) { %>
+                <p class="text-center">No tasks found!</p>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

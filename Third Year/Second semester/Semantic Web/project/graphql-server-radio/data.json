@@ -1,0 +1,41 @@
+{
+    "shows": [
+        {
+            "id": 1,
+            "title": "Night Talks",
+            "time": "22:00"
+        },
+        {
+            "id": 2,
+            "title": "Tech Today",
+            "time": "14:00"
+        },
+        {
+            "id": 3,
+            "title": "Culture Vibes",
+            "time": "18:00"
+        }
+    ],
+    "guests": [
+        {
+            "id": 1,
+            "name": "Mihai Toma",
+            "profession": "Actor",
+            "showId": 1
+        },
+        {
+            "id": 2,
+            "name": "Ioana Matei",
+            "profession": "Software Engineer",
+            "showId": 2
+        },
+        {
+            "id": 3,
+            "name": "Victor Dumitrescu",
+            "profession": "Historian",
+            "showId": 3
+        }
+
+    ]
+
+}

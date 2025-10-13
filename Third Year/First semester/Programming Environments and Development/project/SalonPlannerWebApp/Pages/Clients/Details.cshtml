@@ -1,0 +1,28 @@
+﻿@page
+@model SalonPlannerWebApp.Pages.Clients.DetailsModel
+
+@{
+    ViewData["Title"] = "Client Details";
+}
+
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">Client Details</div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-2">Prenume</dt>
+                <dd class="col-sm-10">@Model.Client.FirstName</dd>
+                <dt class="col-sm-2">Nume</dt>
+                <dd class="col-sm-10">@Model.Client.LastName</dd>
+                <dt class="col-sm-2">Email</dt>
+                <dd class="col-sm-10">@Model.Client.Email</dd>
+                <dt class="col-sm-2">Telefon</dt>
+                <dd class="col-sm-10">@Model.Client.Phone</dd>
+            </dl>
+            <div class="form-group mt-4">
+                <a asp-page="./Edit" asp-route-id="@Model.Client.ID" class="btn btn-primary">Edit</a>
+                <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>

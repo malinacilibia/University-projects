@@ -1,0 +1,83 @@
+﻿@page
+@model SalonPlannerWebApp.Pages.Employees.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista anagajațiilor</h1>
+<form asp-page="./Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Caută după numele angajatului:
+            <input type="text" name="searchString" value="@Model.CurrentFilter" placeholder="Nume angajat" class="form-control" style="display:inline-block; width:auto;" />
+            <input type="submit" value="Filter" class="btn btn-primary" />
+            |
+            <a asp-page="./Index">Resetează lista</a>
+        </p>
+    </div>
+</form>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">Prenume</a>
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">Nume</a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Employee[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Employee[0].Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Employee[0].Position)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Employee[0].Experience)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Employee[0].Studies)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Employee) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Position)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Experience)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Studies)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

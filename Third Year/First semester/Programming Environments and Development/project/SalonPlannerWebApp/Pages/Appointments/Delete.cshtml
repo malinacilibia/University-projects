@@ -1,0 +1,41 @@
+﻿@page
+@model SalonPlannerWebApp.Pages.Appointments.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 class="page-title">Delete Appointment</h1>
+
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">Delete Appointment</div>
+        <div class="card-body">
+            <h5>Are you sure you want to delete this appointment?</h5>
+            <dl class="row">
+                <dt class="col-sm-4">Client</dt>
+                <dd class="col-sm-8">@Model.Appointment.Client.FirstName @Model.Appointment.Client.LastName</dd>
+
+                <dt class="col-sm-4">Angajat</dt>
+                <dd class="col-sm-8">@Model.Appointment.Employee.FirstName @Model.Appointment.Employee.LastName</dd>
+
+                <dt class="col-sm-4">Serviciu</dt>
+                <dd class="col-sm-8">@Model.Appointment.Service.Name</dd>
+
+                <dt class="col-sm-4">Data</dt>
+                <dd class="col-sm-8">@Model.Appointment.Date.ToShortDateString()</dd>
+
+                <dt class="col-sm-4">Durata</dt>
+                <dd class="col-sm-8">@Model.Appointment.Duration</dd>
+
+                <dt class="col-sm-4">Status</dt>
+                <dd class="col-sm-8">@Model.Appointment.Status</dd>
+            </dl>
+            <form method="post" class="mt-3">
+                <input type="hidden" asp-for="Appointment.ID" />
+                <button type="submit" class="btn btn-danger">Delete</button>
+                <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>

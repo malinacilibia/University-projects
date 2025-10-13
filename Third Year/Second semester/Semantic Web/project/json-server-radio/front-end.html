@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio Dashboard</title>
+
+    <style>
+        table, th, td { border: 1px solid black; border-collapse: collapse; padding: 8px; }
+        button { margin: 10px 0; padding: 6px 12px; }
+        h2 { margin-top: 40px; }
+    </style>
+</head>
+<body>
+<h2>Pasul 1: RDF4J - Tabel HTML 1</h2>
+<button id="loadRdf">Buton 1 - Incarca RDF4J</button>
+<table id="rdfTable">
+    <thead><tr><th>Titlu</th><th>Ora</th><th>Invitat</th></tr></thead>
+    <tbody></tbody>
+</table>
+
+
+
+<h2>Pasul 2: Transfer RDF4J in JSON 1</h2>
+<button id="transferBtn">Buton 2 - Transfer RDF - JSON</button>
+<p id="status"></p>
+
+<h2>Pasul 3: Afisare JSON 1 </h2>
+<button id="loadJson">Buton 3 - Incarca JSON 1</button>
+<table id="jsonTable">
+    <thead><tr><th>Titlu</th><th>Ora</th><th>Invitati</th></tr></thead>
+    <tbody></tbody>
+</table>
+
+
+<h2>Pasul 4: Adauga invitat</h2>
+<form id="guestForm">
+    <label for="showsDropdownForm">Emisiune:</label>
+    <select id="showsDropdownForm" name="showId" required>
+        <option value="">-- Selectează o emisiune --</option>
+    </select><br><br>
+
+    <label for="name">Nume invitat:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="profession">Profesie:</label>
+    <input type="text" id="profession" name="profession" required><br><br>
+
+    <button type="submit">Buton 4 - Adauga invitat</button>
+    <p id="guestStatus"></p>
+</form>
+
+<h2>Pasul 5: Afisare JSON 2 </h2>
+<button id="loadJson2">Buton 5 - Incarca JSON 2</button>
+<table id="json2Table">
+    <thead><tr><th>Titlu</th><th>Ora</th><th>Invitati</th></tr></thead>
+    <tbody></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>

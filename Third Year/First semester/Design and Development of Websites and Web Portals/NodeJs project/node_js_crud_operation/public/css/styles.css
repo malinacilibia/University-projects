@@ -1,0 +1,109 @@
+body {
+    background-color: #ffe6f0; /* Fundal deschis cu roz pal */
+    color: #4d004d; /* Text mov închis pentru contrast */
+}
+
+.jumbotron {
+    background-color: #ff66b3; /* Fundal roz intens pentru introducere */
+    color: #fff; /* Text alb pentru contrast */
+    border-radius: 10px; /* Opțional, colțuri rotunjite */
+}
+
+.jumbotron .btn-primary {
+    background-color: #ff3399; /* Roz intens pentru buton */
+    border-color: #ff1a8c; /* Margine roz intens */
+    color: #fff; /* Text alb */
+}
+
+.jumbotron .btn-primary:hover {
+    background-color: #e60073; /* Roz închis pentru hover */
+    border-color: #cc0066; /* Margine roz mai închis */
+}
+
+.jumbotron hr {
+    border-top: 2px solid #ffffff; /* Linie albă pentru separare */
+}
+
+.nav-link {
+    color: #ff66b3; /* Roz intens pentru link-uri */
+}
+
+.nav-link:hover {
+    color: #e60073; /* Roz închis la hover */
+}
+
+
+
+.table th, .table td {
+    border-color: #ffcce6; /* Borduri roz pal pentru tabel */
+}
+
+.table thead th {
+    background-color: #ff99cc; /* Fundal roz pentru antetul tabelului */
+    color: #4d004d; /* Text mov închis pentru contrast */
+}
+
+/* Butonul principal (Add Task, Complete, Search) */
+.btn-primary {
+    background-color: #ffb3d9; /* Roz deschis */
+    border-color: #ffa6d3; /* Margine roz deschis */
+    color: #4d004d; /* Text mov închis */
+}
+
+.btn-primary:hover {
+    background-color: #ff80bf; /* Roz mai intens la hover */
+    border-color: #ff66b3; /* Margine roz mai intens */
+    color: #fff; /* Text alb la hover */
+}
+
+/* Buton de Edit */
+.btn-success {
+    background-color: #d9b3ff; /* Mov deschis */
+    border-color: #c299ff; /* Margine mov deschis */
+    color: #4d004d; /* Text mov închis */
+}
+
+.btn-success:hover {
+    background-color: #b266ff; /* Mov intens la hover */
+    border-color: #9933ff; /* Margine mov intens */
+    color: #fff; /* Text alb la hover */
+}
+
+/* Buton de Delete */
+.btn-danger {
+    background-color: #ffcce6; /* Roz pal */
+    border-color: #ffb3d9; /* Margine roz deschis */
+    color: #4d004d; /* Text mov închis */
+}
+
+.btn-danger:hover {
+    background-color: #ff99cc; /* Roz intens la hover */
+    border-color: #ff80bf; /* Margine roz intens */
+    color: #fff; /* Text alb la hover */
+}
+
+/* Buton de Complete */
+.btn-complete {
+    background-color: #e6ccff; /* Mov foarte deschis */
+    border-color: #d9b3ff; /* Margine mov deschis */
+    color: #4d004d; /* Text mov închis */
+}
+
+.btn-complete:hover {
+    background-color: #c299ff; /* Mov intens la hover */
+    border-color: #b266ff; /* Margine mov intens */
+    color: #fff; /* Text alb la hover */
+}
+
+/* Butonul de Search */
+.input-group .btn-primary {
+    background-color: #ffb3d9; /* Roz deschis */
+    border-color: #ffa6d3; /* Margine roz deschis */
+    color: #4d004d; /* Text mov închis */
+}
+
+.input-group .btn-primary:hover {
+    background-color: #ff80bf; /* Roz mai intens la hover */
+    border-color: #ff66b3; /* Margine roz mai intens */
+    color: #fff; /* Text alb la hover */
+}

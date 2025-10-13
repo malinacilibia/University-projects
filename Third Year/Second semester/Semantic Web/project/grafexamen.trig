@@ -1,0 +1,108 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schema:radioInfo {
+
+    schema:MorningBuzz
+    a schema:Event ;
+    schema:name "Morning Buzz" ;
+    schema:performer schema:ElenaPopescu ;
+    schema:startDate "2024-01-01"^^xsd:date ;
+    schema:startTime "08:00" .
+
+  schema:NightTalks
+    a schema:Event ;
+    schema:name "Night Talks" ;
+    schema:performer schema:AlexIonescu ;
+    schema:startDate "2023-11-15"^^xsd:date ;
+    schema:startTime "22:00" .
+
+  schema:TechToday
+    a schema:Event ;
+    schema:name "Tech Today" ;
+    schema:performer schema:AndreiGeorgescu ;
+    schema:startDate "2023-10-10"^^xsd:date ;
+    schema:startTime "14:00" .
+
+  schema:CultureVibes
+    a schema:Event ;
+    schema:name "Culture Vibes" ;
+    schema:performer schema:IrinaMarin ;
+    schema:startDate "2024-02-20"^^xsd:date ;
+    schema:startTime "18:00" .
+
+  schema:WeekendSpecial
+    a schema:Event ;
+    schema:name "Weekend Special" ;
+    schema:performer schema:RaduVoicu ;
+    schema:startDate "2024-03-30"^^xsd:date ;
+    schema:startTime "12:00" .
+
+
+  schema:ElenaPopescu
+    a schema:Person ;
+    schema:name "Elena Popescu" ;
+    schema:birthDate "1990-04-12"^^xsd:date ;
+    schema:birthPlace schema:Romania .
+
+  schema:AlexIonescu
+    a schema:Person ;
+    schema:name "Alex Ionescu" ;
+    schema:birthDate "1985-09-23"^^xsd:date ;
+    schema:birthPlace schema:Romania .
+
+  schema:AndreiGeorgescu
+    a schema:Person ;
+    schema:name "Andrei Georgescu" ;
+    schema:birthDate "1992-07-07"^^xsd:date ;
+    schema:birthPlace schema:Romania .
+
+  schema:IrinaMarin
+    a schema:Person ;
+    schema:name "Irina Marin" ;
+    schema:birthDate "1988-05-30"^^xsd:date ;
+    schema:birthPlace schema:France .
+
+  schema:RaduVoicu
+    a schema:Person ;
+    schema:name "Radu Voicu" ;
+    schema:birthDate "1979-12-05"^^xsd:date ;
+    schema:birthPlace schema:Germany .
+
+
+  schema:CristinaVlad
+    a schema:Person ;
+    schema:name "Cristina Vlad" ;
+    schema:jobTitle "Nutritionist" ;
+    schema:about "Healthy Lifestyle" ;
+    schema:performerIn schema:MorningBuzz .
+
+  schema:MihaiToma
+    a schema:Person ;
+    schema:name "Mihai Toma" ;
+    schema:jobTitle "Actor" ;
+    schema:about "Theatre and Creativity" ;
+    schema:performerIn schema:NightTalks .
+
+  schema:IoanaMatei
+    a schema:Person ;
+    schema:name "Ioana Matei" ;
+    schema:jobTitle "Software Engineer" ;
+    schema:about "AI in Daily Life" ;
+    schema:performerIn schema:TechToday .
+
+  schema:VictorDumitrescu
+    a schema:Person ;
+    schema:name "Victor Dumitrescu" ;
+    schema:jobTitle "Historian" ;
+    schema:about "Modern European Identity" ;
+    schema:performerIn schema:CultureVibes .
+
+  schema:SofiaNedelcu
+    a schema:Person ;
+    schema:name "Sofia Nedelcu" ;
+    schema:jobTitle "Chef" ;
+    schema:about "Sustainable Cooking" ;
+    schema:performerIn schema:WeekendSpecial .
+}
+

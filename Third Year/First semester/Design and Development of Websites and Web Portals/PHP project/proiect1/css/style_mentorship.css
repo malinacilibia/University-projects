@@ -1,0 +1,121 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6f0;
+    font-family: 'Poppins', sans-serif;
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #ff66b3;
+}
+
+nav.navbar {
+    background-color: #ff99cc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.containers {
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #4a4a4a;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ff99cc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #ff66b3;
+    box-shadow: 0 0 5px rgba(255, 102, 179, 0.2);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"],
+.btn {
+    background-color: #ff66b3;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover,
+.btn:hover {
+    background-color: #ff99cc;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #ff99cc;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    button[type="submit"],
+    .btn {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+}
