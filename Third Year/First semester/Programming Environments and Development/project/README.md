@@ -5,7 +5,6 @@ This project is a web-based salon management system developed in **ASP.NET Core 
 The application allows administrators and clients to manage appointments, services, employees, and feedback through an intuitive web interface.  
 It follows the required structure by implementing **CRUD operations**, **data validation**, and **authentication & authorization mechanisms**.
 
----
 
 ## Features
 
@@ -30,7 +29,7 @@ Clients can log in to view only their own appointments, filtered by date and sta
 ### 7. Feedback Management
 Users can submit and view feedback for services they have used. Feedback includes comments, ratings, and the employee who provided the service.
 
----
+
 
 ## Database Structure
 The system uses a **relational database** containing the following main entities:
@@ -43,7 +42,7 @@ The system uses a **relational database** containing the following main entities
 
 Each entity supports CRUD operations implemented through dedicated controllers and Razor views.
 
----
+
 
 ## Technologies Used
 - **ASP.NET Core MVC (C#)**  
@@ -52,7 +51,7 @@ Each entity supports CRUD operations implemented through dedicated controllers a
 - **Razor Views & Bootstrap**  
 - **Authentication and Authorization**
 
----
+ 
 
 ## How to Implement
 1. **Clone or download the repository.**  
