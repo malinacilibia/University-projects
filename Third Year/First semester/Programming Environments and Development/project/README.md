@@ -11,24 +11,42 @@ It follows the required structure by implementing **CRUD operations**, **data va
 ### 1. Home Page
 The homepage introduces the salon and its main services, allowing users to explore available options and navigate easily through the platform.
 
+![First Page](screenshots/first%20page.png)
+
 ### 2. Administrator Dashboard
 After logging in, the administrator has access to a dashboard displaying key management functionalities such as viewing appointments, managing employees, services, and client feedback.
+
+![Admin Page](screenshots/Admin%20page.png)
+
 
 ### 3. Appointments Management (Admin)
 The administrator can view, search, add, edit, and delete all appointments in the system. Each record includes client, employee, service, date, duration, and status details.
 
+![Admin Appointments Page](screenshots/Admin%20appointments%20page.png)
+
+
 ### 4. Client Management
 The admin can also view and manage the list of registered clients, including their personal data and contact information.
+
+![Clients Page](screenshots/Clients%20page.png)
+
 
 ### 5. Services Management
 Administrators can manage the salon’s services — add new ones, edit details, delete existing ones, or filter by category.
 
+![Service Page](screenshots/Service%20page.png)
+
+
 ### 6. Appointments (Client View)
 Clients can log in to view only their own appointments, filtered by date and status, with options to create or cancel appointments.
+
+![Client Appointments Page](screenshots/Client%20appointments%20page.png)
+
 
 ### 7. Feedback Management
 Users can submit and view feedback for services they have used. Feedback includes comments, ratings, and the employee who provided the service.
 
+![Feedback Page](screenshots/Feedback%20page.png)
 
 
 ## Database Structure
