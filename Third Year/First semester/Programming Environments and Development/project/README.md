@@ -16,7 +16,7 @@ The homepage introduces the salon and its main services, allowing users to explo
 ### 2. Administrator Dashboard
 After logging in, the administrator has access to a dashboard displaying key management functionalities such as viewing appointments, managing employees, services, and client feedback.
 
-![Admin Page](screenshots/Admin%20page.png)
+![Admin Page](../screenshots/Admin%20page.png)
 
 
 ### 3. Appointments Management (Admin)
