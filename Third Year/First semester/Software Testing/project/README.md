@@ -17,21 +17,38 @@ The homepage introduces the platform’s purpose — managing activities, partic
 ### 2. Professor Dashboard
 After login, professors have access to a dashboard summarizing all available management options: participants, employees, activities, schedules, and payments.
 
+![Professor Page](../screenshots/Profesor%20page.png)
+
+
 ### 3. Participants Management (Professor Role)
 Professors can view, add, edit, or delete participants, and filter them by group or name.
+
+![Participants Page](../screenshots/Participants%20page.png)
+
 
 ### 4. Appointments Management (Professor Role)
 This section allows professors to see all scheduled activities, including date, start and end time, and participant names.
 
+![All Appointments Page](../screenshots/All%20apointments%20page.png)
+
+
 ### 5. Users Management (Professor Role)
 Professors can manage all users registered on the platform, viewing their avatars, emails, and assigned roles.
+
+![Users Page](../screenshots/Users%20page.png)
+
 
 ### 6. Appointments (Participant Role)
 Participants can log in and manage their own appointments — adding new ones or checking upcoming scheduled activities.
 
+![Participant Appointment Page](../screenshots/Participant%20appointment%20page%20.png)
+
+
 ### 7. Help and Support
 The **Help** page provides guidance for using the platform, including details on how to manage activities, schedule sessions, handle payments, and contact administrators.  
 It also includes sections for **frequently asked questions (FAQ)** and **contact support** for additional assistance.
+
+![Help Page](../screenshots/Help%20page.png)
 
 
 
