@@ -45,7 +45,7 @@ The project includes two main parts:
 
 
 ## Purpose  
-The project demonstrates an end-to-end approach to database management — from **relational design and PL/SQL logic** to **NoSQL document modeling**.  
+The project demonstrates an end-to-end approach to database management including **relational design and PL/SQL logic** to **NoSQL document modeling**.  
 It provides an integrated system that supports both transactional operations (Oracle) and flexible data management (MongoDB), suitable for real-world educational institutions.
 
 ## Technologies Used  
