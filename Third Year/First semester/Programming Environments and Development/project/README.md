@@ -33,7 +33,7 @@ The admin can also view and manage the list of registered clients, including the
 
 
 ### 5. Services Management
-Administrators can manage the salon’s services — add new ones, edit details, delete existing ones, or filter by category.
+Administrators can manage the salon’s services. They can add new ones, edit details, delete existing ones, or filter by category.
 
 ![Service Page](../screenshots/Service%20page.png)
 
