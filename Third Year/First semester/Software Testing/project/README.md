@@ -39,7 +39,7 @@ Professors can manage all users registered on the platform, viewing their avatar
 
 
 ### 6. Appointments (Participant Role)
-Participants can log in and manage their own appointments — adding new ones or checking upcoming scheduled activities.
+Participants can log in and manage their own appointments by adding new ones or checking upcoming scheduled activities.
 
 ![Participant Appointment Page](../screenshots/Participant%20appointment%20page%20.png)
 
