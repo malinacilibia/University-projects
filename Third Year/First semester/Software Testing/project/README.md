@@ -11,7 +11,7 @@ In addition, the project includes a **software testing component**, documented s
 ### 1. Home Page
 The homepage introduces the platform’s purpose — managing activities, participants, schedules, and payments efficiently.
 
-![First Page](Third%20Year/First%20semester/Software%20Testing/screenshots/First%20page.png)
+![First Page](../screenshots/First%20page.png)
 
 
 ### 2. Professor Dashboard
@@ -65,10 +65,8 @@ All metrics, bug lists, and detailed test results can be found in the accompanyi
 
 ## How to Run
 1. **Install WAMP** and start Apache and MySQL services.  
-2. Place the project folder in:  
-C:\wamp64\www\
+2. Place the project folder in: C:\wamp64\www\
 3. Import the provided SQL file into **phpMyAdmin**.  
 4. Open the project in **PhpStorm** (or your preferred IDE).  
-5. Access the application at:  
-http://localhost/palatul-copiilor/
+5. Access the application at: http://localhost/palatul-copiilor/
 6. Log in using either a **Professor** or **Participant** account to explore the different features.
