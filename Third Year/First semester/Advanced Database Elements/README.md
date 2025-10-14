@@ -5,7 +5,6 @@ This project extends the initial relational database developed for the Children'
 The goal was to enhance the existing Oracle database using **PL/SQL packages, triggers, and stored procedures** while also **adapting the schema to MongoDB** for document-based data management.  
 The system ensures efficient handling of participants, activities, teachers, payments, and scheduling while maintaining data integrity and consistency.
 
----
 
 ## Structure  
 The project includes two main parts:  
@@ -20,8 +19,6 @@ The project includes two main parts:
    - Creation of three main collections: `participant`, `programare`, and `angajat`.  
    - Use of embedded documents and ObjectId references to represent relationships.  
    - Implementation and testing of CRUD operations and queries using MongoDB Compass and CMD.
-
----
 
 ## Implementation  
 
@@ -46,13 +43,10 @@ The project includes two main parts:
   - Aggregating and grouping by difficulty level.  
   - Calculating the average participant age per age group.
 
----
 
 ## Purpose  
 The project demonstrates an end-to-end approach to database management — from **relational design and PL/SQL logic** to **NoSQL document modeling**.  
 It provides an integrated system that supports both transactional operations (Oracle) and flexible data management (MongoDB), suitable for real-world educational institutions.
-
----
 
 ## Technologies Used  
 - **Oracle SQL / PL/SQL (Oracle APEX)**  
