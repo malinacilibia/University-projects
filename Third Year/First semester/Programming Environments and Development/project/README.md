@@ -11,7 +11,7 @@ It follows the required structure by implementing **CRUD operations**, **data va
 ### 1. Home Page
 The homepage introduces the salon and its main services, allowing users to explore available options and navigate easily through the platform.
 
-![First Page](screenshots/first%20page.png)
+![First Page](Third%20Year/First%20semester/Programming%20Environments%20and%20Development/screenshots/first%20page.png)
 
 ### 2. Administrator Dashboard
 After logging in, the administrator has access to a dashboard displaying key management functionalities such as viewing appointments, managing employees, services, and client feedback.
