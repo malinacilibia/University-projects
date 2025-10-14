@@ -5,7 +5,7 @@ This project represents a simulated enterprise network built in Cisco Packet Tra
 The network is based on the **94.114.133.0/24** address space, divided into multiple subnets using **VLSM**.
 
 
-![Network Topology Diagram](Third Year/First semester/Computer Networks and Distributed Systems/project.png)
+![Network Topology Diagram](Third%20Year/First%20semester/Computer%20Networks%20and%20Distributed%20Systems/project.png)
 
 
 ## Network Structure  
