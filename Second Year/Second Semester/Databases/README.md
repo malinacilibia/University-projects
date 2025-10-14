@@ -25,7 +25,4 @@ The project demonstrates the complete process of designing, building, and mainta
 - Data Normalization (up to 3NF)  
 - SQL Views and Constraints
 
-## Author
-Mălina Cilibia  
-Faculty of Economics and Business Administration  
-Babeș-Bolyai University, Cluj-Napoca
+
