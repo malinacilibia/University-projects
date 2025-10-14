@@ -31,12 +31,12 @@ The admin can also view and manage the list of registered clients, including the
 
 ![Clients Page](../screenshots/Clients%20page.png)
 
-### 6. Appointments (Client View)
+### 5. Appointments (Client View)
 Clients can log in to view only their own appointments, filtered by date and status, with options to create or cancel appointments.
 
 ![Client Appointments Page](../screenshots/Client%20appointments%20page.png)
 
-### 5. Services Management
+### 6. Services Management
 Clients can browse all available salon services and book an appointment for the one they prefer.![Service Page](../screenshots/Service%20page.png)
 
 ### 7. Feedback Management
