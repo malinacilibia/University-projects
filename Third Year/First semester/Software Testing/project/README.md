@@ -11,6 +11,9 @@ In addition, the project includes a **software testing component**, documented s
 ### 1. Home Page
 The homepage introduces the platform’s purpose — managing activities, participants, schedules, and payments efficiently.
 
+![First Page](Third%20Year/First%20semester/Software%20Testing/screenshots/First%20page.png)
+
+
 ### 2. Professor Dashboard
 After login, professors have access to a dashboard summarizing all available management options: participants, employees, activities, schedules, and payments.
 
