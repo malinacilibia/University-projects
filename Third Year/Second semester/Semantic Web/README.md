@@ -78,6 +78,8 @@ The project includes the following core components:
 - The intermediate and final tables will appear below on the same page.
 - Use the form to add a new Episode linked to an existing RadioShow.
 
+---
+
 ## Technologies Used  
 - **RDF4J (REST API)**  
 - **PHP (Backend Logic)**  
