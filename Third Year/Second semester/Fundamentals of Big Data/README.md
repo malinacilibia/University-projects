@@ -1,4 +1,4 @@
-# Heart Disease Classification — Big Data Project
+# Heart Disease Classification 
 
 ## Overview  
 This project focuses on **classifying the presence of heart disease** based on patients’ clinical and demographic characteristics using various machine learning models.  
