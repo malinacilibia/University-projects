@@ -48,10 +48,10 @@ The project includes the following core components:
 ## How to Install  
 
 ### Prerequisites  
-- [XAMPP](https://www.apachefriends.org/) with PHP ≥ 7.4  
-- [RDF4J Workbench](https://rdf4j.org/) (default port **8080**)  
-- [JSON-Server](https://github.com/typicode/json-server) (port **4000**)  
-- [JSON-GraphQL-Server](https://github.com/marmelab/json-graphql-server) (port **3000**)  
+- XAMPP with PHP ≥ 7.4  
+- RDF4J Workbench (default port **8080**)  
+- JSON-Server (port **4000**)  
+- JSON-GraphQL-Server (port **3000**)  
 - Google Chrome (recommended)
 
 ### Setup Steps  
@@ -68,11 +68,11 @@ The project includes the following core components:
    ```bash
    json-graphql-server db2.json --port 3000
 4. **Run PHP Backend**
-- Copy the project folder into htdocs (e.g. C:\xampp\htdocs\CilibiaMalina_RusuNicola).
+- Copy the project folder into htdocs (e.g. C:\xampp\htdocs\project).
 - Start Apache in XAMPP Control Panel.
 - Access the project via:
    ```bash
-   http://localhost/CilibiaMalina_RusuNicola/index.html
+   http://localhost/project/index.html
 5. **Interact with the Application**
 - Click each button in order (1→5) to execute every transfer step.
 - The intermediate and final tables will appear below on the same page.
