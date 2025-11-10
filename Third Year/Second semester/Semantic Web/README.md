@@ -59,7 +59,7 @@ The project includes the following core components:
 1. **Start RDF4J**  
    - Open [http://localhost:8080/rdf4j-workbench/](http://localhost:8080/rdf4j-workbench/).  
    - Create a new repository named **grafexamen**.  
-   - Import the RDF dataset from the `data` folder.
+   - Import the RDF dataset.
 
 2. **Start JSON-Server**  
    ```bash
