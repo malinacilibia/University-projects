@@ -7,8 +7,7 @@ It was developed as part of the **Big Data** course.
 The complete analysis, results, and explanations are included in the documentation file provided in the project folder.  
 The source code and model training can be accessed through the Google Colab notebook linked below.
 
-📄 **Full Documentation:** included in the project archive  
-🔗 **Colab Notebook:** [View Code on Google Colab](https://colab.research.google.com/drive/1xtMg0vaZl5BuvFjz4iERo18m5RzcGmHM?usp=sharing)
+**Colab Notebook:** [View Code on Google Colab](https://colab.research.google.com/drive/1xtMg0vaZl5BuvFjz4iERo18m5RzcGmHM?usp=sharing)
 
 ---
 
