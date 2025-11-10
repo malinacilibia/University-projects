@@ -1,4 +1,4 @@
-# Business Intelligence Project — FSEGA
+# Business Intelligence Project 
 
 ## Overview  
 This project was developed as part of the **Business Intelligence** course.  
