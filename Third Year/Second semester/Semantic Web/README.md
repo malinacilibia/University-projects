@@ -64,45 +64,26 @@ The project includes the following core components:
 2. **Start JSON-Server**  
    ```bash
    json-server --watch db.json --port 4000
-Start JSON-GraphQL-Server
+3. **Start JSON-GraphQL-Server**
+   ```bash
+   json-graphql-server db2.json --port 3000
+4. **Run PHP Backend**
+- Copy the project folder into htdocs (e.g. C:\xampp\htdocs\CilibiaMalina_RusuNicola).
+- Start Apache in XAMPP Control Panel.
+- Access the project via:
+   ```bash
+   http://localhost/CilibiaMalina_RusuNicola/index.html
+5. **Interact with the Application**
+- Click each button in order (1→5) to execute every transfer step.
+- The intermediate and final tables will appear below on the same page.
+- Use the form to add a new Episode linked to an existing RadioShow.
 
-bash
-Copiază codul
-json-graphql-server db2.json --port 3000
-Run PHP Backend
+## Technologies Used  
+- **RDF4J (REST API)**  
+- **PHP (Backend Logic)**  
+- **HTML, CSS, JavaScript (AJAX Front-End)**  
+- **JSON-Server (REST)**  
+- **JSON-GraphQL-Server (GraphQL)**  
+- **Schema.org Ontology**  
+- **HTTP Request Handling and Data Filtering**
 
-Copy the project folder into htdocs (e.g. C:\xampp\htdocs\CilibiaMalina_RusuNicola).
-
-Start Apache in XAMPP Control Panel.
-
-Access the project via:
-
-bash
-Copiază codul
-http://localhost/CilibiaMalina_RusuNicola/index.html
-Interact with the Application
-
-Click each button in order (1→5) to execute every transfer step.
-
-The intermediate and final tables will appear below on the same page.
-
-Use the form to add a new Episode linked to an existing RadioShow.
-
-Purpose
-This project illustrates an end-to-end data integration scenario combining semantic web technologies, RESTful APIs, and NoSQL systems.
-It demonstrates practical understanding of HTTP communication, RDF modeling, and data interoperability between heterogeneous systems.
-
-Technologies Used
-RDF4J (REST API)
-
-PHP (Backend Logic)
-
-HTML, CSS, JavaScript (AJAX Front-End)
-
-JSON-Server (REST)
-
-JSON-GraphQL-Server (GraphQL)
-
-Schema.org Ontology
-
-HTTP Request Handling and Data Filtering
