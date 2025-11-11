@@ -75,14 +75,8 @@ Each event includes details such as name, date, and description, and is displaye
    ```bash
    php artisan serve
 9. Start the local development server
-      ```bash
+   ```bash
       php artisan serve
-
-
-
-
-
-
 
 
 
