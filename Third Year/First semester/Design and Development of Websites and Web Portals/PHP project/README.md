@@ -13,7 +13,7 @@ The application was developed as part of the **Design and Development of Website
 ### 1. Home Page
 The homepage introduces the platform’s purpose — empowering women in technology through education, networking, and mentorship.
 
-![Home Page](University-projects/Third%20Year/First%20semester/Design%20and%20Development%20of%20Websites%20and%20Web%20Portals/screenshots/php%20(2).png)
+![Home Page](../screenshots/php%20(2).png)
 
 ---
 
