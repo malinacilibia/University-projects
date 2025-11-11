@@ -1,7 +1,7 @@
 # Task Management System — Node.js Web Application
 
 ## Overview
-This project represents a full-stack web application developed using **Node.js**, **Express.js**, and **EJS templates**, designed to efficiently manage and track daily tasks.  
+This project represents a full-stack web application developed using **Node.js**, designed to efficiently manage and track daily tasks.  
 The platform allows users to add, edit, delete, and mark tasks as complete while organizing them by **priority** and **status**.  
 It provides a minimal and elegant interface for productivity tracking and team collaboration.  
 The application was developed as part of the *Design and Development of Websites and Web Portals* course.
