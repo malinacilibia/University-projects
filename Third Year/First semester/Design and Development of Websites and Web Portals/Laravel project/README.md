@@ -27,7 +27,7 @@ The admin can add, edit, or remove stories that highlight women’s achievements
 ---
 
 ### 3. Events Management
-The admin dashboard allows viewing, adding, editing, and deleting events related to FinTech networking and mentoring opportunities.  
+The site allows viewing, adding, editing, and deleting events related to FinTech networking and mentoring opportunities.  
 Each event includes details such as name, date, and description, and is displayed in a structured table with action buttons.
 
 ![Members List](../screenshots/laravel%20(1).png)
