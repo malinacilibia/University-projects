@@ -14,7 +14,7 @@ The application was developed as part of the *Design and Development of Websites
 The main page displays all registered members, including their name, email, profession, company, LinkedIn profile, and status.  
 Users can **filter** members by profession, company, or activity status, and perform CRUD operations such as edit or delete.
 
-![Members List](../screenshots/laravel%20(1).png)
+![Events Management](../screenshots/laravel%20(3).png) 
 
 ---
 
@@ -30,7 +30,7 @@ The admin can add, edit, or remove stories that highlight women’s achievements
 The admin dashboard allows viewing, adding, editing, and deleting events related to FinTech networking and mentoring opportunities.  
 Each event includes details such as name, date, and description, and is displayed in a structured table with action buttons.
 
-![Events Management](../screenshots/laravel%20(3).png)
+![Members List](../screenshots/laravel%20(1).png)
 
 ---
 
