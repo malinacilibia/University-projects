@@ -74,9 +74,9 @@ Each event includes details such as name, date, and description, and is displaye
 8. Start the local development server
    ```bash
    php artisan serve
-9. Start the local development server
+9. Access the app at:
    ```bash
-      php artisan serve
+   http://localhost:8000
 
 
 
