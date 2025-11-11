@@ -20,42 +20,46 @@ The homepage introduces the platform’s purpose — empowering women in technol
 ### 2. Video Resources
 A section dedicated to educational and inspirational video materials that promote women in STEM fields.
 
-![Video Resources](University-projects/Third%20Year/First%20semester/Design%20and%20Development%20of%20Websites%20and%20Web%20Portals/screenshots/php%20(1).png)
+![Video Resources](../screenshots/php%20(1).png)
 
 ---
 
 ### 3. Admin Dashboard
 The administrator’s dashboard allows the admin to update their role description, list managed projects, and document contributions to the community.
 
-![Admin Dashboard](University-projects/Third%20Year/First%20semester/Design%20and%20Development%20of%20Websites%20and%20Web%20Portals/screenshots/php%20(3).png)
+![Admin Dashboard](../screenshots/php%20(3).png)
+
 
 ---
 
 ### 4. User Details
 Displays a list of registered users along with their roles, managed projects, and community involvement details.
 
-![User Details](University-projects/Third%20Year/First%20semester/Design%20and%20Development%20of%20Websites%20and%20Web%20Portals/screenshots/php%20(4).png)
+![User Details](../screenshots/php%20(4).png)
+
 
 ---
 
 ### 5. Event Calendar
 Presents a table of upcoming community events for each month, including the date, name, and type (online/offline).
 
-![Event Calendar](University-projects/Third%20Year/First%20semester/Design%20and%20Development%20of%20Websites%20and%20Web%20Portals/screenshots/php%20(5).png)
+![Event Calendar](../screenshots/php%20(5).png)
+
 
 ---
 
 ### 6. Mentorship Session Scheduling
 Users can schedule mentorship sessions by specifying mentor name, mentee name, date, time, and subject.
 
-![Mentorship Scheduling](University-projects/Third%20Year/First%20semester/Design%20and%20Development%20of%20Websites%20and%20Web%20Portals/screenshots/php%20(6).png)
+![Mentorship Scheduling](../screenshots/php%20(6).png)
 
 ---
 
 ### 7. Jobs Board
 Includes a job filtering system where users can search and browse open positions related to technology and innovation.
 
-![Jobs Board](University-projects/Third%20Year/First%20semester/Design%20and%20Development%20of%20Websites%20and%20Web%20Portals/screenshots/php%20(7).png)
+![Jobs Board](../screenshots/php%20(7).png)
+
 
 ---
 
