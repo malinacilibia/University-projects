@@ -4,7 +4,7 @@
 This project represents a complete web application developed in **Laravel** using **PHP**, **MySQL**, and **Blade templates**, designed to support and promote women in the **FinTech industry**.  
 The platform provides an administrative interface for managing members, events, and success stories.  
 It allows adding, editing, filtering, and deleting records in an intuitive dashboard with a responsive, minimalist design.  
-The application was developed as part of the *Design and Development of Websites and Web Portals* course at **Babeș-Bolyai University (FSEGA)**.
+The application was developed as part of the *Design and Development of Websites and Web Portals* course .
 
 ---
 
@@ -50,3 +50,41 @@ Each event includes details such as name, date, and description, and is displaye
 1. **Clone the repository**
    ```bash
    git clone https://github.com/malinacilibia/University-projects.git
+2. Navigate to the Laravel project directory:
+   ```bash
+   git clone https://github.com/malinacilibia/University-projects.git
+3. Install dependencies
+   ```bash
+   composer install
+   npm install
+4. Create a .env file
+   ```bash
+   cp .env.example .env
+5. Update your database credentials in .env:
+   ```bash
+   DB_DATABASE=fintech_db
+   DB_USERNAME=root
+   DB_PASSWORD=
+6. Generate the application key
+   ```bash
+   php artisan key:generate
+7. Run migrations and seed data
+   ```bash
+   php artisan migrate --seed
+8. Start the local development server
+   ```bash
+   php artisan serve
+9. Start the local development server
+      ```bash
+      php artisan serve
+
+
+
+
+
+
+
+
+
+
+
