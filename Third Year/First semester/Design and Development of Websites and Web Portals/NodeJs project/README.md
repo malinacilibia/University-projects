@@ -48,19 +48,16 @@ This helps maintain a clear separation between ongoing and finalized work.
    ```bash
    git clone https://github.com/malinacilibia/University-projects.git
 
-1. **Navigate to the Node.js project folder:**
+2. **Navigate to the Node.js project folder:**
    ```bash
    cd "Third Year/First semester/Design and Development of Websites and Web Portals/NodeJs project"
-1. **Install dependencies**
+3. **Install dependencies**
    ```bash
    npm install
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/malinacilibia/University-projects.git
-1. **Run the application**
+4. **Run the application**
    ```bash
    npm start
-1. **Open your browser and access:**
+5. **Open your browser and access:**
    ```bash
    http://localhost:3000
 
