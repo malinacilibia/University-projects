@@ -52,7 +52,7 @@ Each event includes details such as name, date, and description, and is displaye
    git clone https://github.com/malinacilibia/University-projects.git
 2. Navigate to the Laravel project directory:
    ```bash
-   git clone https://github.com/malinacilibia/University-projects.git
+   cd "Third Year/First semester/Design and Development of Websites and Web Portals/Laravel project"
 3. Install dependencies
    ```bash
    composer install
